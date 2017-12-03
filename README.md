@@ -4,7 +4,7 @@ It is a mock service implementing a cost calculator for a moving service.
 It has been written to be compiled using `gomobile bind` for iOS and Android example SDKs
 
 ## Business Rules
-This estimation calculation service uses the following business rules when conducing an esitimate
+This estimation service uses the following business rules when calculating an estimate
 
 1. Multiply total estimated hours by the provided hourly rate for an initial subtotal
 2. Apply the cost multiplier - effectively a service fee - to the subtotal
