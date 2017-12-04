@@ -2,7 +2,6 @@ package ecaas
 
 import (
 	"fmt"
-	"time"
 
 	"github.com/shopspring/decimal"
 )
@@ -47,14 +46,14 @@ func addTax(total decimal.Decimal, taxRate decimal.Decimal) decimal.Decimal {
 }
 
 func jobComplexityForDate(dateString string) (float64, error) {
-	date, err := time.Parse(time.UnixDate, dateString)
-	if err != nil {
-		return 0, ErrorInvalidDateFormat
-	}
-	complexity := 0.15
-	if date.Weekday() == time.Friday ||
-		date.Weekday() == time.Saturday {
-		complexity = 0.3
-	}
-	return complexity, nil
+	// date, err := time.Parse(time.UnixDate, dateString)
+	// if err != nil {
+	// 	return 0, ErrorInvalidDateFormat
+	// }
+	// complexity := 0.15
+	// if date.Weekday() == time.Friday ||
+	// 	date.Weekday() == time.Saturday {
+	// 	complexity = 0.3
+	// }
+	// return complexity, nil
 }
